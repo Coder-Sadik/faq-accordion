@@ -43,7 +43,9 @@ I'm participating #100DaysOfCode challenge. This is my day-3. So, I'm hopeful ab
 
 ### Useful resources
 
-- [Flexbox](https://www.w3schools.com/css/css3_flexbox_container.asp) - If you are new with display flex property then you can learn from here. -[QerySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) - To know about javascript query selector -[BackgroundImgUrl](https://www.w3schools.com/cssref/css3_pr_background.php) - I have used some background image url properties in my project.
+- [Flexbox](https://www.w3schools.com/css/css3_flexbox_container.asp) - If you are new with display flex property then you can learn from here.
+- [QerySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) - To know about javascript query selector
+- [BackgroundImgUrl](https://www.w3schools.com/cssref/css3_pr_background.php) - I have used some background image url properties in my project.
 
 ## Author
 
