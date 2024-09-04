@@ -1,10 +1,11 @@
+/* Global styles */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
 
 :root {
 	--white: hsl(0, 0%, 100%);
-	--pink: hsl(275, 100%, 97%);
-	--g-purple: hsl(292, 16%, 49%);
-	--d-purple: hsl(292, 42%, 14%);
+	--pink: #f9eeff;
+	--g-purple: #ad28eb;
+	--d-purple: #311535;
 }
 
 p {
@@ -16,16 +17,21 @@ p {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
+	background-image: url("./assets/images/background-pattern-desktop.svg");
+	background-repeat: repeat-x;
 	background-color: var(--pink);
 	min-height: 100vh;
 	font-family: "Work Sans", sans-serif;
 }
 
-.bgImg img {
-	width: 100%;
+/* Allow scrolling while hiding the scrollbar */
+body::-webkit-scrollbar {
+	width: 0; /* Removes the scrollbar width */
+	background: transparent; /* Makes the background of the scrollbar transparent */
 }
 
 .container {
@@ -39,18 +45,18 @@ body {
 	background-color: var(--white);
 	width: 600px;
 	position: relative;
-	top: -185px;
+	top: 155px;
 	z-index: 99;
 	border-radius: 15px;
 	padding: 40px 40px 0px 40px;
-	margin: 20px;
+	margin: 30px;
 	color: var(--d-purple);
 }
 
 .card-title {
 	margin: 10px 0px;
 	display: flex;
-	gap: 10px;
+	gap: 20px;
 	font-size: 28px;
 }
 
@@ -64,10 +70,10 @@ body {
 
 .accordion-header {
 	font-weight: 600;
+	padding: 20px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 0px;
 	cursor: pointer;
 }
 
@@ -78,14 +84,28 @@ body {
 /* show or hide */
 .accordion-content {
 	text-align: justify;
-	margin-bottom: 25px;
-	display: none;
+	color: var(--d-purple);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
 }
 
 .accordion-item.active .accordion-content {
 	display: block;
+	max-height: 200px;
+	margin-bottom: 20px;
 }
 
-.accordion-item.active .icon-plus {
-	display: none;
+/* Media Query for screens 375px and below */
+@media (max-width: 375px) {
+	body {
+		background-image: url(./assets/images/background-pattern-mobile.svg);
+	}
+
+	.card {
+		position: relative;
+		top: 80px;
+        border-radius: 15px;
+        padding: 20px;
+	}
 }
