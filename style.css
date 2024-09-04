@@ -6,6 +6,7 @@
 	--g-purple: hsl(292, 16%, 49%);
 	--d-purple: hsl(292, 42%, 14%);
 }
+
 p {
 	font-size: 16px;
 	font-weight: 400;
@@ -22,6 +23,7 @@ body {
 	min-height: 100vh;
 	font-family: "Work Sans", sans-serif;
 }
+
 .bgImg img {
 	width: 100%;
 }
@@ -31,23 +33,27 @@ body {
 	height: inherit;
 	display: flex;
 	justify-content: center;
-	/* background-color: inherit; */
 }
+
 .card {
 	background-color: var(--white);
-	width: 700px;
+	width: 600px;
 	position: relative;
-	top: -120px;
+	top: -185px;
 	z-index: 99;
 	border-radius: 15px;
-	padding: 25px;
+	padding: 40px 40px 0px 40px;
+	margin: 20px;
+	color: var(--d-purple);
 }
 
 .card-title {
 	margin: 10px 0px;
 	display: flex;
 	gap: 10px;
+	font-size: 28px;
 }
+
 .accordion .accordion-item:nth-child(-n + 3)::after {
 	content: "";
 	width: 100%;
@@ -55,15 +61,31 @@ body {
 	background-color: rgba(58, 56, 56, 0.404);
 	display: block;
 }
+
 .accordion-header {
 	font-weight: 600;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 0px;
+	cursor: pointer;
 }
 
+.accordion-header:hover {
+	color: var(--g-purple);
+}
+
+/* show or hide */
 .accordion-content {
+	text-align: justify;
 	margin-bottom: 25px;
-	/* display: none; */
+	display: none;
+}
+
+.accordion-item.active .accordion-content {
+	display: block;
+}
+
+.accordion-item.active .icon-plus {
+	display: none;
 }
