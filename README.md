@@ -23,8 +23,8 @@ This screenshot represents the output of my code.
 
 ### Links
 
-- Solution URL: [https://github.com/Coder-Sadik/blog-preview-card](https://github.com/Coder-Sadik/blog-preview-card)
-- Live Site URL: [https://coder-sadik.github.io/blog-preview-card/](https://coder-sadik.github.io/blog-preview-card/)
+- Solution URL: [https://github.com/Coder-Sadik/faq-accordion](https://github.com/Coder-Sadik/faq-accordion)
+- Live Site URL: [https://coder-sadik.github.io/faq-accordion/](https://coder-sadik.github.io/faq-accordion/)
 
 ## My process
 
@@ -35,7 +35,7 @@ This is a very easy and simple task. I have done this with raw css and javascrip
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-  -Javascript
+- Javascript
 
 ### Continued development
 
